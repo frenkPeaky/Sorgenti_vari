@@ -1,0 +1,314 @@
+<html>
+	<head>
+		<title>UCL</title>
+		<link type="text/css" href="styles/default.css" rel="stylesheet"></link>
+		<link type="text/css" href="styles/defaultFlickr.css" rel="stylesheet"></link>
+	
+		<script type="text/javascript" src="scripts/utils.js"></script>
+		<script type="text/javascript" src="scripts/flickr.js"></script>
+	</head>
+	<body>
+		<div id="container">
+		
+			<div class="header">
+				
+				<div class="navigation">
+					<img class="imageSpace"  src="images/flickr_logo.png" alt="flickr logo" width="15%" height="70%">
+        			<ul class="menu" id="navMenu" style="padding-top: 0.5%;">
+        				
+        				<li ><a href="#">Explore</a></li>
+        				<li ><a href="#">Create</a></li>
+        			</ul>
+        			
+        			 
+       		 	</div><!--#navigation-->
+       		 	
+       		 		
+       			<div class="search">
+       			
+       				<div class="searchbar">
+       					<input type="image" class="searchImg" src="images/searchImg.png" > 
+       					<input class="searchInput" id="searchStr" type="text" placeholder="Photo, People or group" onkeyup="checkString(event,this.value);"/>				
+       				</div>
+       				
+       				<div class="barbuttons">
+     					<input type="image" class="upimg" src="images/upload.png" > 
+     					<input type="button" class="loginButton" value="Log In"/>
+     					<input type="button" class="signupButton" value="Sign Up"/>
+     					
+     				</div>
+     			</div> <!-- search -->
+       		 	
+			</div> <!-- header -->
+			
+			<div class="topic"> <!-- topics -->
+				<div class="navigation">
+					<ul class="menu" id="exploreMenu" style="padding-top: 0.5%; margin-left: 0px; padding-left: 0px;">		
+        				<li onclick="underlineOnOff('exploreMenu','Explore');" ><a href="#"  id="Explore" style="color:black;">Explore</a></li>
+        				<li onclick="underlineOnOff('exploreMenu','Trending');"><a href="#" id="Trending" style="color:black;">Trending</a></li>
+        			</ul>
+				</div> <!-- navigation2 -->
+			</div>	
+				
+				
+				<div class="main">				
+					<div class="mainHeader">
+						<h3 style="float: left;">Explore</h3>
+						<input type="radio" name="disposition" id="single" class="input-hidden" >
+						<label for="single">
+							<img src="images/singleIconNoSel.png" alt="Single" class="dispositionImg" id="singleImg"/>
+						</label>
+						<input type="radio" name="disposition" id="grid" class="input-hidden" />
+						<label for="grid">
+							<img src="images/gridIconNoSel.png" alt="grid" class="dispositionImg" id="gridImg"/>
+						</label>
+						
+					</div>  <!-- mainHeader -->
+					<div class="mainBody">
+						<table class="mainTableDiv" style="height: 25%; width: 100%">
+								<tr class="tableRow">
+									<td class="tableRowContent" style="width: 70%;">
+    									<div class="tableContent" onmouseover="displayOn('overlap1');" onmouseout="displayoff('overlap1');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap1">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+    								
+    								<td class="tableRowContent" style="width: 30%;">
+    										
+    									<div class="tableContent" onmouseover="displayOn('overlap2');" onmouseout="displayoff('overlap2');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap2">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+								</tr>
+						</table>
+						<table class="mainTableDiv" style="height: 25%; width: 100%">
+								<tr class="tableRow">
+									<td class="tableRowContent" style="width: 33%;">
+    										<div class="tableContent" onmouseover="displayOn('overlap3');" onmouseout="displayoff('overlap3');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap3">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+    								<td class="tableRowContent" style="width: 33%;">
+    										<div class="tableContent" onmouseover="displayOn('overlap4');" onmouseout="displayoff('overlap4');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap4">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+    								<td class="tableRowContent" style="width: 34%;">
+    										<div class="tableContent" onmouseover="displayOn('overlap5');" onmouseout="displayoff('overlap5');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap5">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+								</tr>
+							</table>
+							<table class="mainTableDiv" style="height: 25%; width: 100%">
+								<tr class="tableRow">
+									<td class="tableRowContent" style="width: 50%;">
+    									<div class="tableContent" onmouseover="displayOn('overlap6');" onmouseout="displayoff('overlap6');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap6">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+    								
+    								<td class="tableRowContent" style="width: 50%;">
+    										
+    									<div class="tableContent" onmouseover="displayOn('overlap7');" onmouseout="displayoff('overlap7');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap7">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+								</tr>
+						</table>
+						<table class="mainTableDiv" style="height: 25%; width: 100%">
+								<tr class="tableRow">
+									<td class="tableRowContent" style="width: 30%;">
+    										<div class="tableContent" onmouseover="displayOn('overlap8');" onmouseout="displayoff('overlap8');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap8">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+    								<td class="tableRowContent" style="width: 40%;">
+    										<div class="tableContent" onmouseover="displayOn('overlap9');" onmouseout="displayoff('overlap9');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap9">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+    								<td class="tableRowContent" style="width: 30%;">
+    										<div class="tableContent" onmouseover="displayOn('overlap10');" onmouseout="displayoff('overlap10');" style="background-image: url('images/bologna.png'); background-repeat: no-repeat;">
+											<div class="filler">
+											</div> <!-- filler -->
+											<div class="overlap" id="overlap10">
+											    <div class="photoText">
+											    	<p class="pTitolo">werwerwerwewe</p><p class="pAutore">asdasdasdasd</p>
+											    </div> <!-- photoText -->
+											    <div class="photoLikeComment">
+											    	<div class="like">
+														<input type="image" class="likeImg" src="images/starIcon.png" ><p class="pLike">12</p> 
+													</div> <!-- like -->
+													<div class="comment">
+														<input type="image" class="likeImg" src="images/comicIcon.png" > <p class="pLike">54</p>
+													</div> <!-- like -->
+											    </div> <!-- photoLikeComment -->
+												
+												
+											</div> <!-- overlap -->
+    									</div>	<!-- tableContent -->
+    								
+    								</td>
+								</tr>
+							</table>
+					</div> <!-- mainBody -->
+			    </div> <!-- main -->
+			
+				
+		</div> <!-- container -->
+	</body>
+</html>
